@@ -100,9 +100,11 @@ collections:
                 widget: object
                 fields:
                   [{ label: Title, name: title }, { label: Slug, name: slug }]
-              - label: Work Cards
-                name: works
+              - label: Cards
+                name: cards
                 widget: list
                 fields:
-                  - { label: Thumbnail, name: thumbnail, widget: image }
-                  - { label: Description, name: description, widget: markdown }
+                  [
+                    { label: Description, name: description },
+                    { label: Thumbnail, name: thumbnail, widget: image },
+                  ]
