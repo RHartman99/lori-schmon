@@ -73,6 +73,7 @@ module.exports = {
         },
       },
     },
+    "gatsby-plugin-react-svg",
     "gatsby-plugin-netlify",
   ],
 };

@@ -5,6 +5,8 @@ import { Helmet } from "react-helmet";
 // import Footer from "./Footer";
 import StayWildWoff2 from "../fonts/stay-wild.woff2";
 import StayWildOTF from "../fonts/stay-wild.otf";
+import { useStaticQuery, graphql } from "gatsby";
+import Footer from "./Footer";
 
 const CustomStyles = createGlobalStyle`
   body {
@@ -23,6 +25,23 @@ const CustomStyles = createGlobalStyle`
 `;
 
 const Layout = ({ children, ...rest }) => {
+  const { markdownRemark } = useStaticQuery(graphql`
+    query FooterQuery {
+      markdownRemark(frontmatter: { setting: { eq: "footer" } }) {
+        frontmatter {
+          formId
+          formTitle
+          copyright
+          successMsg
+          formFields {
+            label
+            required
+            type
+          }
+        }
+      }
+    }
+  `);
   return (
     <>
       <main {...rest} tw="w-full overflow-hidden">
@@ -33,7 +52,7 @@ const Layout = ({ children, ...rest }) => {
         <CustomStyles />
         {children}
       </main>
-      {/* <Footer /> */}
+      <Footer fields={markdownRemark.frontmatter} />
     </>
   );
 };

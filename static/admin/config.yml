@@ -14,7 +14,6 @@ collections:
         name: footer
         file: content/settings/footer.md
         fields:
-          - { label: "Setting", name: "setting", default: "footer" }
           - { label: Copyright Message, name: copyright }
           - { label: Form Title, name: formTitle }
           - { label: Form Success Message, name: successMsg }
