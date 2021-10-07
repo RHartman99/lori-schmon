@@ -47,7 +47,7 @@ export const pageQuery = graphql`
           cards {
             description
             thumbnail {
-              ...GatsbyImage
+              publicURL
             }
           }
         }

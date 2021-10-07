@@ -60,9 +60,9 @@ const Portfolio = ({ content, button, cards, horizontal }) => {
             >
               <FlipBox
                 front={
-                  <GatsbyImage
+                  <img
                     tw="w-full h-full object-cover"
-                    image={getImage(thumbnail)}
+                    src={thumbnail.publicURL}
                     altText="thumbnail"
                   />
                 }
