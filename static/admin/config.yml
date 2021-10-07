@@ -105,6 +105,6 @@ collections:
                 widget: list
                 fields:
                   [
-                    { label: Description, name: description },
+                    { label: Description, name: description, widget: markdown },
                     { label: Thumbnail, name: thumbnail, widget: image },
                   ]
