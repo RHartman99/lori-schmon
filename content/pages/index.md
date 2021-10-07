@@ -21,12 +21,10 @@ overview:
   content: With this film and all of my future films, my aim is to wade through
     the streams of human emotion, however difficult and challenging it might be,
     and tell stories that make people feel something.
-  button: asdf
 portfolio:
   content: "This is a sample of work, including “Becoming Julia Michaels”,
     “Cleveland Cavaliers”, “Why I Vote: Vic Mensa”, “Jordan Football Dreams” and
     more."
-  button: fa
   works: asdf
   horizontal: true
 ---
