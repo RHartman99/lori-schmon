@@ -30,7 +30,7 @@ collections:
                   label: Field Type,
                   name: type,
                   widget: select,
-                  choices:
+                  options:
                     [
                       { label: Text, value: text },
                       { label: Text Area, value: textarea },
