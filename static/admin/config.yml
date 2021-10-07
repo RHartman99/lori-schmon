@@ -77,32 +77,32 @@ collections:
             widget: object
             fields:
               - { label: Title, name: title, widget: text }
-              - {
-                  label: Button,
-                  name: button,
-                  widget: object,
-                  fields:
-                    [
-                      { label: Title, name: title },
-                      { label: Slug, name: slug },
-                    ],
-                }
+              # - {
+              #     label: Button,
+              #     name: button,
+              #     widget: object,
+              #     fields:
+              #       [
+              #         { label: Title, name: title },
+              #         { label: Slug, name: slug },
+              #       ],
+              #   }
               - { label: Content, name: content, widget: markdown }
           - label: Portfolio
             name: portfolio
             widget: object
             fields:
               - { label: Content, name: content, widget: markdown }
-              - {
-                  label: Button,
-                  name: button,
-                  widget: object,
-                  fields:
-                    [
-                      { label: Title, name: title },
-                      { label: Slug, name: slug },
-                    ],
-                }
+              # - {
+              #     label: Button,
+              #     name: button,
+              #     widget: object,
+              #     fields:
+              #       [
+              #         { label: Title, name: title },
+              #         { label: Slug, name: slug },
+              #       ],
+              #   }
               - label: Work Cards
                 name: works
                 widget: list
