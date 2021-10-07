@@ -7,6 +7,38 @@ media_folder: static/assets
 public_folder: /assets
 site_url: https://lori-schmon.netlify.app
 collections:
+  - label: Global Settings
+    name: globalSettings
+    files:
+      - label: Footer
+        name: footer
+        file: content/settings/footer.md
+        fields:
+          - { label: "Setting", name: "setting", default: "footer" }
+          - { label: Copyright Message, name: copyright }
+          - { label: Form Title, name: formTitle }
+          - { label: Form Success Message, name: successMsg }
+          - { label: Formcarry Form ID, name: formId }
+          - label: Form Fields
+            name: formFields
+            widget: list
+            fields:
+              [
+                { label: Label, name: label },
+                { label: Required, name: required, widget: boolean },
+                {
+                  label: Field Type,
+                  name: type,
+                  widget: select,
+                  choices:
+                    [
+                      { label: Text, value: text },
+                      { label: Text Area, value: textarea },
+                      { label: Email, value: email },
+                      { label: Phone, value: tel },
+                    ],
+                },
+              ]
   - label: Pages
     name: pages
     files:
@@ -34,3 +66,51 @@ collections:
                 step: 1
                 value_type: int
                 default: 10
+          - label: About
+            name: about
+            widget: object
+            fields:
+              - { label: Portrait, name: image, widget: image }
+              - { label: Portrait Text, name: overlay }
+              - { label: Content, name: markdown, widget: markdown }
+          - label: Overview
+            name: overview
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: text }
+              - {
+                  label: Button,
+                  name: button,
+                  fields:
+                    [
+                      { label: Title, name: title },
+                      { label: Slug, name: slug },
+                    ],
+                }
+              - { label: Content, name: content, widget: markdown }
+          - label: Portfolio
+            name: portfolio
+            widget: object
+            fields:
+              - { label: Content, name: content, widget: markdown }
+              - {
+                  label: Button,
+                  name: button,
+                  fields:
+                    [
+                      { label: Title, name: title },
+                      { label: Slug, name: slug },
+                    ],
+                }
+              - label: Work Cards
+                name: works
+                fields:
+                  [
+                    { label: Thumbnail, name: thumbnail, widget: image },
+                    { label: Description, name: description, widget: markdown },
+                  ]
+              - {
+                  label: Flip Cards Horizontally,
+                  name: horizontal,
+                  widget: boolean,
+                }
