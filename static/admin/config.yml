@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/assets
+public_folder: /assets
+# site_url: https://zavosadoption.netlify.app
+collections:
+  - label: Pages
+    name: pages
+    files:
+      - label: Home
+        name: home
+        file: content/pages/index.md
+        fields:
+          - label: Front Hero
+            name: frontHero
+            widget: object
+            fields:
+              - label: Slides
+                name: slides
+                widget: list
+                label_singular: slide
+                fields:
+                  - { label: Title, name: title }
+                  - { label: Video, name: video, widget: file }
+              - label: Slide Duration
+                name: slideDuration
+                widget: number
+                hint: Amount of seconds each slide should stay on screen.
+                min: 1
+                max: 60
+                step: 1
+                value_type: int
+                default: 10
