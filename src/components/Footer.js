@@ -4,7 +4,6 @@ import Copyright from "./Copyright";
 import ThematicBox from "./ThematicBox";
 import Form from "./Form";
 
-// @ts-ignore
 const Element = styled.footer(({ padding }) => [
   tw`flex flex-col items-center justify-end px-4 py-12 text-white bg-black`,
   padding > 0 &&
