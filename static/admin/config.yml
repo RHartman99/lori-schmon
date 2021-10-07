@@ -4,7 +4,7 @@ backend:
 
 media_folder: static/assets
 public_folder: /assets
-site_url: https://lori-schmon.netlify.app/
+site_url: https://lori-schmon.netlify.app
 collections:
   - label: Pages
     name: pages
