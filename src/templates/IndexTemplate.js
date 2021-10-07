@@ -1,8 +1,20 @@
 import React from "react";
 import Layout from "../components/Layout";
+import FrontHero from "../components/FrontHero";
+import About from "../components/About";
+import Overview from "../components/Overview";
+import Portfolio from "../components/Portfolio";
 
 const IndexTemplate = ({ fields }) => {
-  return <Layout></Layout>;
+  const { frontHero, about, overview, portfolio } = fields;
+  return (
+    <Layout>
+      <FrontHero {...frontHero} />
+      <About {...about} />
+      <Overview {...overview} />
+      <Portfolio {...portfolio} />
+    </Layout>
+  );
 };
 
 export default IndexTemplate;

@@ -1,4 +1,5 @@
 ---
+page: home
 frontHero:
   slides:
     - title: test
