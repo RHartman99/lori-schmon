@@ -103,12 +103,12 @@ collections:
               #         { label: Slug, name: slug },
               #       ],
               #   }
-              - label: Work Cards
-                name: works
-                widget: list
-                label_singular: card
-                fields:
-                  [
-                    { label: Thumbnail, name: thumbnail, widget: image },
-                    { label: Description, name: description, widget: markdown },
-                  ]
+              # - label: Work Cards
+              #   name: works
+              #   widget: list
+              #   label_singular: card
+              #   fields:
+              #     [
+              #       { label: Thumbnail, name: thumbnail, widget: image },
+              #       { label: Description, name: description, widget: markdown },
+              #     ]
