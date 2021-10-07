@@ -33,5 +33,30 @@ portfolio:
   button:
     title: MORE WORK
     slug: /work/
-  cards: []
+  cards:
+    - description: |-
+        ## Description
+
+        Description goes here
+      thumbnail: /assets/frame4.png
+    - description: |-
+        ## Description
+
+        Description goes here
+      thumbnail: /assets/frame5.png
+    - description: |-
+        ## Description
+
+        Description goes here
+      thumbnail: /assets/frame1.png
+    - description: |-
+        ## Description
+
+        Description goes here
+      thumbnail: /assets/frame2.png
+    - description: |-
+        ## Description
+
+        Description goes here
+      thumbnail: /assets/frame3.png
 ---
