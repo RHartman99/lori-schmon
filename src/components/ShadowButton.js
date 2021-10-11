@@ -45,7 +45,13 @@ const ShadowButton = ({ title, slug, onClick, ...rest }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
   return (
     // @ts-ignore
-    <Styles title={title} ref={ref} inView={inView} {...rest}>
+    <Styles
+      title={title}
+      ref={ref}
+      inView={inView}
+      className={inView ? "inView" : ""}
+      {...rest}
+    >
       <Link to={slug}>{title}</Link>
     </Styles>
   );

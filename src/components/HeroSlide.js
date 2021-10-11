@@ -1,11 +1,9 @@
 import React from "react";
-import tw, { styled } from "twin.macro";
+import tw from "twin.macro";
 
 const Slide = tw.div`font-wild relative w-full h-screen flex flex-col items-center justify-center`;
 
-const Background = styled.video`
-  ${tw`absolute top-0 left-0 object-fill w-full h-full z-behind`}
-`;
+const Background = tw.video`absolute top-0 left-0 object-cover w-full h-full z-behind`;
 
 const Title = tw.h2`text-4xl sm:text-6xl md:text-8xl text-center text-white px-16 md:px-32`;
 

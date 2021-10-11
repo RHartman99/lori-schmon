@@ -7,6 +7,7 @@ import StayWildWoff2 from "../fonts/stay-wild.woff2";
 import StayWildOTF from "../fonts/stay-wild.otf";
 import { useStaticQuery, graphql } from "gatsby";
 import Footer from "./Footer";
+import Header from "./Header";
 
 const CustomStyles = createGlobalStyle`
   body {
@@ -24,7 +25,7 @@ const CustomStyles = createGlobalStyle`
   }
 `;
 
-const Layout = ({ children, ...rest }) => {
+const Layout = ({ children, footerPadding, blackMenu, ...rest }) => {
   const { markdownRemark } = useStaticQuery(graphql`
     query FooterQuery {
       markdownRemark(frontmatter: { setting: { eq: "footer" } }) {
@@ -44,7 +45,8 @@ const Layout = ({ children, ...rest }) => {
   `);
   return (
     <>
-      <main {...rest} tw="w-full overflow-hidden">
+      <Header dark={!!blackMenu} />
+      <main {...rest} tw="w-full">
         <Helmet>
           <meta name="robots" content="noindex, nofollow" />
         </Helmet>
@@ -52,7 +54,10 @@ const Layout = ({ children, ...rest }) => {
         <CustomStyles />
         {children}
       </main>
-      <Footer fields={markdownRemark.frontmatter} />
+      <Footer
+        fields={markdownRemark.frontmatter}
+        padding={Number.isInteger(footerPadding) ? footerPadding : 0}
+      />
     </>
   );
 };

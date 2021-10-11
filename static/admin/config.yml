@@ -39,11 +39,75 @@ collections:
                 },
               ]
   - label: Pages
+    name: inner_pages
+    label_singular: Page
+    folder: content/pages
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Publish Date, name: date, widget: datetime }
+      - {
+          label: Layout Settings,
+          name: layoutSettings,
+          widget: object,
+          fields:
+            [
+              {
+                label: Footer Padding,
+                name: footerPadding,
+                widget: number,
+                default: 0,
+                value_type: int,
+                min: 0,
+                step: 1,
+              },
+              {
+                label: Black Menu Button,
+                name: blackMenu,
+                widget: boolean,
+                required: false,
+              },
+            ],
+        }
+      - label: Sections
+        name: sections
+        widget: list
+        label_singular: section
+        types:
+          - label: Biography
+            name: biography
+            widget: object
+            fields:
+              - { label: Portrait, name: image, widget: image }
+              - { label: Portrait Text, name: overlay }
+              - { label: Content, name: markdown, widget: markdown }
+          - label: Portfolio
+            name: portfolio
+            widget: object
+            fields:
+              - label: Content
+                name: content
+                widget: markdown
+              - label: Button
+                name: button
+                widget: object
+                fields:
+                  [{ label: Title, name: title }, { label: Slug, name: slug }]
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  [
+                    { label: Description, name: description, widget: markdown },
+                    { label: Thumbnail, name: thumbnail, widget: image },
+                  ]
+  - label: Custom Pages
     name: pages
     files:
       - label: Home
         name: home
-        file: content/pages/index.md
+        file: content/home/index.md
         fields:
           - label: Front Hero
             name: frontHero

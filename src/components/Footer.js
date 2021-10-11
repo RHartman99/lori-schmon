@@ -5,10 +5,12 @@ import ThematicBox from "./ThematicBox";
 import Form from "./Form";
 
 const Element = styled.footer(({ padding }) => [
-  tw`flex flex-col items-center justify-end px-4 py-12 text-white bg-black`,
+  tw`relative z-10 flex flex-col items-center justify-end px-4 py-12 text-white bg-black`,
   padding > 0 &&
     css`
-      padding-top: calc(3rem + ${padding}px);
+      @media (min-width: 1024px) {
+        padding-top: calc(3rem + ${padding}px);
+      }
     `,
 ]);
 
