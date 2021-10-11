@@ -6,7 +6,10 @@ layoutSettings:
   blackMenu: false
 sections:
   - type: portfolio
-    content: "This is a sample of work, including “Becoming Julia Michaels”,\r
+    content: "# Work
+
+
+      This is a sample of work, including “Becoming Julia Michaels”,\r
       “Cleveland Cavaliers”, “Why I Vote: Vic Mensa”, “Jordan Football Dreams”
       and\r more."
     button:
