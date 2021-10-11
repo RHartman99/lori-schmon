@@ -1,6 +1,9 @@
 ---
 title: About
 date: 2021-10-11T14:51:01.277Z
+layoutSettings:
+  footerPadding: 100
+  blackMenu: true
 sections:
   - type: biography
     image: /assets/lor_05.png
