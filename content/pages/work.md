@@ -16,14 +16,28 @@ sections:
       title: CONTACT
       slug: /contact/
     cards:
-      - description: |-
-          ## Description
-
-          Description goes here
+      - description: "## Becoming Julia Michaels"
+        thumbnail: /assets/frame4.png
+        url: https://vimeo.com/630190561
+      - description: "## Vic Mensa - Why I Vote"
+        thumbnail: /assets/frame5.png
+        url: https://vimeo.com/630172287
+      - description: "## Cleveland Cavaliers"
         thumbnail: /assets/frame1.png
-      - description: |-
-          ## Description
-
-          Description goes here
+        url: https://vimeo.com/630159110
+      - description: "## Detroit Lions"
         thumbnail: /assets/frame2.png
+        url: https://vimeo.com/630166673
+      - description: "## Jordan Woman's Football"
+        thumbnail: /assets/frame3.png
+        url: https://vimeo.com/630168691
+      - description: "## Choate"
+        thumbnail: /assets/choate.jpg
+        url: https://vimeo.com/630163828
+      - description: "## Visa Betterment"
+        thumbnail: /assets/visa-betterment.jpg
+        url: https://vimeo.com/630170007
+      - description: "## Becky G - Why I Vote"
+        url: https://vimeo.com/630170516
+        thumbnail: /assets/becky-g.jpg
 ---
