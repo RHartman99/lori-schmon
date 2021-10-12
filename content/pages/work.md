@@ -1,6 +1,9 @@
 ---
 title: Work
 date: 2021-10-11T16:32:49.978Z
+meta:
+  title: Lori Schmon - Work
+  description: Lori Schmon's recent work and portfolio.
 layoutSettings:
   footerPadding: 0
   blackMenu: false
