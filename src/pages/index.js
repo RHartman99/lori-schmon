@@ -19,6 +19,7 @@ export const pageQuery = graphql`
             video {
               publicURL
             }
+            url
           }
         }
         about {
@@ -49,6 +50,7 @@ export const pageQuery = graphql`
             thumbnail {
               publicURL
             }
+            url
           }
         }
       }

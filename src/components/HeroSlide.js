@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import ModalContext from "./ModalContext";
 
 const Slide = tw.div`font-wild relative w-full h-screen flex flex-col items-center justify-center`;
 
@@ -9,11 +10,17 @@ const Title = tw.h2`text-4xl sm:text-6xl md:text-8xl text-center text-white px-1
 
 const Subtitle = tw.button`text-primary font-bold text-base sm:(text-xl mt-6) font-mont tracking-wide mt-3`;
 
-const HeroSlide = ({ title, video }) => {
+const HeroSlide = ({ title, video, url }) => {
   return (
     <Slide>
       <Title>{title}</Title>
-      <Subtitle>WATCH NOW</Subtitle>
+      {!!url && (
+        <ModalContext.Consumer>
+          {(modal) => (
+            <Subtitle onClick={() => modal.openModal(url)}>WATCH NOW</Subtitle>
+          )}
+        </ModalContext.Consumer>
+      )}
       {!!video && (
         <Background autoPlay playsInline muted loop>
           <source src={video.publicURL} type="video/mp4" />

@@ -97,10 +97,19 @@ collections:
               - label: Cards
                 name: cards
                 widget: list
-                fields:
-                  [
+                fields: [
                     { label: Description, name: description, widget: markdown },
                     { label: Thumbnail, name: thumbnail, widget: image },
+                    {
+                      label: Vimeo URL,
+                      name: url,
+                      widget: string,
+                      # pattern:
+                      #   [
+                      #     '/(http|https)?:\/\/(www\.|player\.)?vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/([^\/]*)\/videos\/|video\/|)(\d+)(?:|\/\?)/',
+                      #     "Must be a valid Vimeo URL. Did you forget 'https://'?",
+                      #   ],
+                    },
                   ]
   - label: Custom Pages
     name: pages
@@ -120,6 +129,7 @@ collections:
                 fields:
                   - { label: Title, name: title }
                   - { label: Video, name: video, widget: file }
+                  - { label: Vimeo URL, name: url, required: false }
               - label: Slide Duration
                 name: slideDuration
                 widget: number
@@ -167,8 +177,17 @@ collections:
               - label: Cards
                 name: cards
                 widget: list
-                fields:
-                  [
+                fields: [
                     { label: Description, name: description, widget: markdown },
                     { label: Thumbnail, name: thumbnail, widget: image },
+                    {
+                      label: Vimeo URL,
+                      name: url,
+                      widget: string,
+                      # pattern:
+                      #   [
+                      #     '/(http|https)?:\/\/(www\.|player\.)?vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/([^\/]*)\/videos\/|video\/|)(\d+)(?:|\/\?)/',
+                      #     "Must be a valid Vimeo URL. Did you forget 'https://'?",
+                      #   ],
+                    },
                   ]

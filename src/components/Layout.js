@@ -8,6 +8,8 @@ import StayWildOTF from "../fonts/stay-wild.otf";
 import { useStaticQuery, graphql } from "gatsby";
 import Footer from "./Footer";
 import Header from "./Header";
+import { ModalProvider } from "./ModalContext";
+import Modal from "./Modal";
 
 const CustomStyles = createGlobalStyle`
   body {
@@ -44,8 +46,9 @@ const Layout = ({ children, footerPadding, blackMenu, ...rest }) => {
     }
   `);
   return (
-    <>
+    <ModalProvider>
       <Header dark={!!blackMenu} />
+      <Modal />
       <main {...rest} tw="w-full">
         <Helmet>
           <meta name="robots" content="noindex, nofollow" />
@@ -58,7 +61,7 @@ const Layout = ({ children, footerPadding, blackMenu, ...rest }) => {
         fields={markdownRemark.frontmatter}
         padding={Number.isInteger(footerPadding) ? footerPadding : 0}
       />
-    </>
+    </ModalProvider>
   );
 };
 

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@formcarry/react": "^1.0.3",
+    "@u-wave/react-vimeo": "^0.9.5",
     "assert": "^2.0.0",
     "babel-plugin-styled-components": "^1.13.2",
     "framer-motion": "^4.1.17",
