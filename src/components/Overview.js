@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-  ${tw`flex flex-col items-start justify-end w-full lg:(px-12 w-7/12)`}
+  ${tw`flex flex-col items-start justify-end w-full mb-6 lg:(mb-0 px-12 w-7/12)`}
 `;
 
 const Right = tw(Left)`
