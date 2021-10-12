@@ -12,6 +12,11 @@ export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        meta {
+          title
+          description
+          noIndex
+        }
         title
         layoutSettings {
           footerPadding

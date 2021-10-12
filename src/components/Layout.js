@@ -1,7 +1,6 @@
 import React from "react";
 import { GlobalStyles } from "twin.macro";
 import { createGlobalStyle } from "styled-components";
-import { Helmet } from "react-helmet";
 // import Footer from "./Footer";
 import StayWildWoff2 from "../fonts/stay-wild.woff2";
 import StayWildOTF from "../fonts/stay-wild.otf";
@@ -10,6 +9,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import { ModalProvider } from "./ModalContext";
 import Modal from "./Modal";
+import SEO from "./SEO";
 
 const CustomStyles = createGlobalStyle`
   body {
@@ -27,7 +27,14 @@ const CustomStyles = createGlobalStyle`
   }
 `;
 
-const Layout = ({ children, footerPadding, blackMenu, offblack, ...rest }) => {
+const Layout = ({
+  children,
+  footerPadding,
+  blackMenu,
+  offblack,
+  meta,
+  ...rest
+}) => {
   const { markdownRemark } = useStaticQuery(graphql`
     query FooterQuery {
       markdownRemark(frontmatter: { setting: { eq: "footer" } }) {
@@ -49,10 +56,8 @@ const Layout = ({ children, footerPadding, blackMenu, offblack, ...rest }) => {
     <ModalProvider>
       <Header dark={!!blackMenu} />
       <Modal />
+      <SEO meta={meta} />
       <main {...rest} tw="w-full">
-        <Helmet>
-          <meta name="robots" content="noindex, nofollow" />
-        </Helmet>
         <GlobalStyles />
         <CustomStyles />
         {children}

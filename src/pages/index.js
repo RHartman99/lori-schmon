@@ -12,6 +12,10 @@ export const pageQuery = graphql`
   query MyQuery {
     markdownRemark(frontmatter: { page: { eq: "home" } }) {
       frontmatter {
+        meta {
+          title
+          description
+        }
         frontHero {
           slideDuration
           slides {

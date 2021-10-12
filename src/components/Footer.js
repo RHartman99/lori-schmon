@@ -33,7 +33,7 @@ const Circle = styled(CircleComponent)`
   }
 `;
 
-const Footer = ({ padding, fields, ...rest }) => {
+const Footer = ({ fields, ...rest }) => {
   const { formTitle, formId, copyright, successMsg, formFields } = fields;
   return (
     // @ts-ignore

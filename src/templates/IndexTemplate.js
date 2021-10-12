@@ -8,7 +8,7 @@ import Portfolio from "../components/Portfolio";
 const IndexTemplate = ({ fields }) => {
   const { frontHero, about, overview, portfolio } = fields;
   return (
-    <Layout>
+    <Layout meta={fields.meta}>
       <FrontHero {...frontHero} />
       <About {...about} />
       <Overview {...overview} />

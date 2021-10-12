@@ -4,6 +4,7 @@ date: 2021-10-11T14:51:01.277Z
 meta:
   title: Lori Schmon - About
   description: About Lori Schmon.
+  noIndex: false
 layoutSettings:
   footerPadding: 200
   blackMenu: true

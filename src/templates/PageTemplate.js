@@ -4,7 +4,7 @@ import Sections from "../components/Sections";
 
 const PageTemplate = ({ fields }) => {
   return (
-    <Layout {...fields.layoutSettings}>
+    <Layout {...fields.layoutSettings} meta={fields.meta}>
       <Sections sections={fields.sections} />
     </Layout>
   );
