@@ -4,6 +4,7 @@ frontHero:
   slides:
     - title: test
       video: /assets/video1.mp4
+      url: https://vimeo.com/630159110
   slideDuration: 10
 about:
   image: /assets/lori.jpg
