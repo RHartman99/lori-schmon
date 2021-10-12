@@ -40,24 +40,29 @@ portfolio:
 
         Description goes here
       thumbnail: /assets/frame4.png
+      url: https://vimeo.com/630190561
     - description: |-
         ## Description
 
         Description goes here
       thumbnail: /assets/frame5.png
+      url: https://vimeo.com/630172287
     - description: |-
         ## Description
 
         Description goes here
       thumbnail: /assets/frame1.png
+      url: https://vimeo.com/630159110
     - description: |-
         ## Description
 
         Description goes here
       thumbnail: /assets/frame2.png
+      url: https://vimeo.com/630166673
     - description: |-
         ## Description
 
         Description goes here
       thumbnail: /assets/frame3.png
+      url: https://vimeo.com/630163828
 ---
