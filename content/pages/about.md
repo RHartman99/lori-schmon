@@ -1,6 +1,9 @@
 ---
 title: About
 date: 2021-10-11T14:51:01.277Z
+meta:
+  title: Lori Schmon - About
+  description: About Lori Schmon.
 layoutSettings:
   footerPadding: 200
   blackMenu: true
