@@ -6,7 +6,7 @@ layoutSettings:
   blackMenu: true
 sections:
   - type: biography
-    image: /assets/lor_05.png
+    image: /assets/lori.jpg
     overlay: Passion. Truth. Understanding.
     markdown: >-
       # About Lori Schmon
