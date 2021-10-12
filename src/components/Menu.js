@@ -11,7 +11,7 @@ const Container = styled.nav(({ open }) => [
 ]);
 
 const Item = styled(Link)(({ current }) => [
-  tw`font-wild text-center w-full text-2xl px-24 py-2 block transition-all duration-500 ease-in-out hover:text-primary before:(content[''] bg-gray-200 w-full relative h-px)`,
+  tw`block w-full px-24 py-2 text-2xl text-center transition-all duration-500 ease-in-out font-wild hover:text-primary`,
   current === true && tw`text-primary`,
 ]);
 
@@ -60,6 +60,11 @@ const Menu = ({ onClose, ...rest }) => {
                 </li>
               );
             })}
+            <li>
+              <Item to="/contact/" current={pathname === "/contact/"}>
+                Contact
+              </Item>
+            </li>
             <li tw="absolute bottom-4 -translate-x-1/2 left-1/2">
               <Close onClick={onClose}>&times;</Close>
             </li>
