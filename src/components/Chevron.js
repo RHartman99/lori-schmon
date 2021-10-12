@@ -17,7 +17,7 @@ const Button = styled.button(({ flipped }) => [
       }
     }
   `,
-  flipped && tw`left-auto transform rotate-180 right-1 sm:right-8`,
+  flipped && tw`left-auto! transform rotate-180 right-1 sm:right-8`,
 ]);
 
 const Chevron = (props) => {
