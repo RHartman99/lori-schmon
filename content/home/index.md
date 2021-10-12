@@ -2,9 +2,18 @@
 page: home
 frontHero:
   slides:
-    - title: test
-      video: /assets/video1.mp4
-      url: https://vimeo.com/630159110
+    - title: Becoming Julia Michaels
+      video: /assets/julia-michaels-3.mp4
+      url: https://vimeo.com/630190561
+    - title: Jordan Football Dreams
+      video: /assets/jordan-2.mp4
+      url: https://vimeo.com/630168691
+    - title: Choate Rosemary Hall
+      video: /assets/choate-1.mp4
+      url: https://vimeo.com/630163828
+    - title: Visa & Betterment
+      video: /assets/visa-4.mp4
+      url: https://vimeo.com/630170007
   slideDuration: 10
 about:
   image: /assets/lori.jpg

@@ -26,6 +26,7 @@ const FrontHero = ({ slides, slideDuration }) => {
     infinite: true,
     speed: 500,
     autoplay: true,
+    lazyLoad: true,
     autoplaySpeed: slideDuration * 1000,
     nextArrow: <Chevron flipped />,
     prevArrow: <Chevron />,
@@ -35,9 +36,11 @@ const FrontHero = ({ slides, slideDuration }) => {
       {!!slides && (
         <Slider {...settings}>
           {slides.map(
-            ({ video, title }, i) =>
+            ({ video, title, url }, i) =>
               !!video &&
-              !!title && <HeroSlide title={title} video={video} key={i} />
+              !!title && (
+                <HeroSlide title={title} video={video} url={url} key={i} />
+              )
           )}
         </Slider>
       )}
