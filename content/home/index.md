@@ -27,9 +27,11 @@ overview:
     title: MORE ABOUT LORI
     slug: /about/
 portfolio:
-  content: "This is a sample of work, including “Becoming Julia Michaels”,
-    “Cleveland Cavaliers”, “Why I Vote: Vic Mensa”, “Jordan Football Dreams” and
-    more."
+  content: >-
+    ## Work
+
+
+    This is a sample of work, including “Becoming Julia Michaels”, “Cleveland Cavaliers”, “Why I Vote: Vic Mensa”, “Jordan Football Dreams” and more.
   works: asdf
   horizontal: true
   button:
