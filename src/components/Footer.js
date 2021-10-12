@@ -3,9 +3,10 @@ import tw, { styled, css } from "twin.macro";
 import Copyright from "./Copyright";
 import ThematicBox from "./ThematicBox";
 import Form from "./Form";
+import CircleComponent from "./Circle";
 
 const Element = styled.footer(({ padding }) => [
-  tw`relative z-10 flex flex-col items-center justify-end px-4 py-12 text-white bg-black`,
+  tw`relative z-10 flex flex-col items-center justify-end px-4 py-12 text-white bg-gray`,
   padding > 0 &&
     css`
       @media (min-width: 1024px) {
@@ -20,6 +21,16 @@ const FormContainer = styled.div`
 `;
 
 const Title = tw.h2`text-8xl font-wild`;
+
+const Circle = styled(CircleComponent)`
+  ${tw`absolute hidden transform -translate-y-1/2 opacity-5 top-1/2 lg:block`}
+  right: 2%;
+
+  @media (max-width: 1280px) {
+    height: 500px;
+    width: 500px;
+  }
+`;
 
 const Footer = ({ padding, fields }) => {
   const { formTitle, formId, copyright, successMsg, formFields } = fields;
@@ -44,6 +55,7 @@ const Footer = ({ padding, fields }) => {
         )}
       </FormContainer>
       <Copyright text={copyright} />
+      <Circle />
     </Element>
   );
 };

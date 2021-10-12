@@ -5,8 +5,8 @@ import Content from "./Content";
 import ShadowButton from "./ShadowButton";
 
 const Section = styled.div(({ inner }) => [
-  tw`flex flex-wrap items-end pt-0 pb-12 overflow-hidden text-white bg-black md:py-24`,
-  !!inner && tw`pt-32`,
+  tw`flex flex-wrap items-end pt-0 pb-12 overflow-hidden text-white bg-gray md:py-24`,
+  inner && tw`pt-48!`,
 ]);
 
 /* @ts-ignore */
@@ -57,7 +57,6 @@ const Portfolio = ({ content, button, cards, horizontal, ...rest }) => {
   const [current, setCurrent] = useState(0);
   const [width, setWidth] = useState(1024);
   const getWidth = () => {
-    console.log(window.innerWidth);
     return (
       window.innerWidth ||
       document.documentElement.clientWidth ||

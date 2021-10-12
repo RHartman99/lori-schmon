@@ -4,7 +4,13 @@ import ContentComponent from "./Content";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Section = tw.section`flex lg:flex-row flex-col`;
-const Left = tw.div`flex w-full lg:w-1/4 xl:w-1/2 relative z-40 lg:-my-12 overflow-hidden`;
+const Left = styled.div`
+  ${tw`relative z-40 flex w-full overflow-hidden lg:w-1/4 xl:w-1/2 lg:-my-12`}
+
+  .gatsby-image-wrapper {
+    ${tw`w-full h-full`}
+  }
+`;
 const Right = tw.div`flex flex-col items-center justify-center w-full lg:(w-3/4 py-48) xl:w-1/2 py-24 px-4 sm:px-12`;
 const Content = styled(ContentComponent)`
   max-width: 600px;

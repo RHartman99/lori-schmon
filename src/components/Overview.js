@@ -3,8 +3,9 @@ import tw, { styled, css } from "twin.macro";
 import Content from "./Content";
 import ShadowButton from "./ShadowButton";
 import ThematicBox from "./ThematicBox";
+import CircleComponent from "./Circle";
 
-const Section = tw.section`relative py-16 lg:py-32 bg-black overflow-hidden justify-center items-center flex text-white`;
+const Section = tw.section`relative py-16 lg:(py-48 pb-64) bg-gray overflow-hidden justify-center items-center flex text-white`;
 
 const Container = styled.div`
   ${tw`flex flex-col items-end justify-center px-4 sm:px-8 lg:(flex-row -mx-12)`}
@@ -21,6 +22,17 @@ const Right = tw(Left)`
 
 const Title = styled.h2`
   ${tw`text-4xl font-wild`}
+`;
+
+const Circle = styled(CircleComponent)`
+  ${tw`absolute bottom-0 z-50 hidden opacity-5 lg:block`}
+  left: 10%;
+  width: 700px;
+  height: 700px;
+
+  @media (max-width: 1280px) {
+    left: 2.5%;
+  }
 `;
 
 const Button = styled(ShadowButton)(() => [
@@ -66,6 +78,7 @@ const Overview = ({ title, button, content }) => {
           <Content markdown={content} />
         </Right>
       </Container>
+      <Circle />
     </Section>
   );
 };
