@@ -1,5 +1,9 @@
 ---
 page: home
+meta:
+  title: Lori Schmon - Home
+  description: Lori Schmon is a filmmaker and producer with a passion for creative
+    non-fiction storytelling.
 frontHero:
   slides:
     - title: Becoming Julia Michaels
