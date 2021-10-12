@@ -6,7 +6,7 @@ frontHero:
       video: /assets/video1.mp4
   slideDuration: 10
 about:
-  image: /assets/lor_05.png
+  image: /assets/lori.jpg
   overlay: Passion. Truth. Understanding.
   markdown: >-
     ## About Lori Schmon
