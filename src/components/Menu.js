@@ -32,7 +32,12 @@ const Menu = ({ onClose, ...rest }) => {
           query {
             allMarkdownRemark(
               limit: 1000
-              filter: { frontmatter: { title: { ne: "" } } }
+              filter: {
+                frontmatter: {
+                  title: { ne: "" }
+                  meta: { noIndex: { ne: true } }
+                }
+              }
             ) {
               nodes {
                 frontmatter {

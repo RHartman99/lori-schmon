@@ -41,7 +41,6 @@ const Footer = ({ fields, ...rest }) => {
       <FormContainer>
         <ThematicBox tw="mb-8" />
         {!!formTitle && <Title>{formTitle}</Title>}
-        {/* //TODO: Add this to a global form. */}
         {!!formId ? (
           <Form
             tw="mt-12 mb-24"
