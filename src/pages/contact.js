@@ -4,8 +4,8 @@ import "twin.macro";
 
 const Contact = () => {
   return (
-    <Layout>
-      <div tw="w-full bg-gray h-24 md:h-32" />
+    <Layout offblack>
+      <div tw="w-full bg-offblack h-24 md:h-32" />
     </Layout>
   );
 };

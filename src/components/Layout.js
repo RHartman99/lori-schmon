@@ -27,7 +27,7 @@ const CustomStyles = createGlobalStyle`
   }
 `;
 
-const Layout = ({ children, footerPadding, blackMenu, ...rest }) => {
+const Layout = ({ children, footerPadding, blackMenu, offblack, ...rest }) => {
   const { markdownRemark } = useStaticQuery(graphql`
     query FooterQuery {
       markdownRemark(frontmatter: { setting: { eq: "footer" } }) {
@@ -60,6 +60,7 @@ const Layout = ({ children, footerPadding, blackMenu, ...rest }) => {
       <Footer
         fields={markdownRemark.frontmatter}
         padding={Number.isInteger(footerPadding) ? footerPadding : 0}
+        offblack={offblack}
       />
     </ModalProvider>
   );

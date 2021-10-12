@@ -5,7 +5,7 @@ import ThematicBox from "./ThematicBox";
 import Form from "./Form";
 import CircleComponent from "./Circle";
 
-const Element = styled.footer(({ padding }) => [
+const Element = styled.footer(({ padding, offblack }) => [
   tw`relative z-10 flex flex-col items-center justify-end px-4 py-12 text-white bg-gray`,
   padding > 0 &&
     css`
@@ -13,6 +13,7 @@ const Element = styled.footer(({ padding }) => [
         padding-top: calc(3rem + ${padding}px);
       }
     `,
+  offblack && tw`bg-offblack`,
 ]);
 
 const FormContainer = styled.div`
@@ -32,11 +33,11 @@ const Circle = styled(CircleComponent)`
   }
 `;
 
-const Footer = ({ padding, fields }) => {
+const Footer = ({ padding, fields, ...rest }) => {
   const { formTitle, formId, copyright, successMsg, formFields } = fields;
   return (
     // @ts-ignore
-    <Element padding={padding}>
+    <Element {...rest}>
       <FormContainer>
         <ThematicBox tw="mb-8" />
         {!!formTitle && <Title>{formTitle}</Title>}

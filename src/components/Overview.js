@@ -73,7 +73,6 @@ const Overview = ({ title, button, content }) => {
           <Title>{title}</Title>
         </Left>
         <Right>
-          {/* @ts-ignore */}
           <Button {...button} />
           <Content markdown={content} />
         </Right>
