@@ -26,16 +26,15 @@ about:
     ## About Lori Schmon
 
 
-    I am a filmmaker and producer with a passion for creative non-fiction storytelling. I have eight years of experience directing and producing videos for Vevo, MTV, and various corporations/universities.
+    Growing up I was always a very curious child. I would observe and analyze and take things in, always trying to understand the “why” and “how” of situations, not just the “who, what, when, where.” To some I seemed reserved, but really I was just trying to understand the world and everyone in it. 
 
 
-    I first began my storytelling journey as a bright-eyed teen with a love for video cameras and editing. Soon enough, that passion developed into something much deeper and personal: I wanted to understand people and tell their stories in hopes of revealing truth about the world we live in today. The more we can connect with people from all walks of life — from different societies, cultures and religions — the more we’ll begin to understand each other and have more compassion.
+    Today, as a director, producer and (for those who know me all too well) a dedicated dog mom, I’m not all that different. My passion is rooted in understanding people and telling their stories with a sense of soul, purpose, and intention. In my work, I hope to make films that help us find connection and truth in our shared human experience. Because that’s all that really matters in the end.
 overview:
-  title: "I am currently directing a documentary about the Jordanian women's
-    soccer team and their quest to qualify for the Women's World Cup. "
-  content: With this film and all of my future films, my aim is to wade through
-    the streams of human emotion, however difficult and challenging it might be,
-    and tell stories that make people feel something.
+  title: |
+    I am a director and producer of documentaries & commercials. 
+  content: My passion is rooted in understanding people and telling their stories
+    with a sense of soul and purpose.
   button:
     title: MORE ABOUT LORI
     slug: /about/
