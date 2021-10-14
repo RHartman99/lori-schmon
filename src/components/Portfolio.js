@@ -4,6 +4,8 @@ import FlipBox from "./FlipBox";
 import Content from "./Content";
 import ShadowButton from "./ShadowButton";
 import ModalContext from "./ModalContext";
+import HoverBox from "./HoverBox";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Section = styled.div(({ inner }) => [
   tw`flex flex-wrap items-end pt-0 pb-12 overflow-hidden text-white bg-gray md:py-24`,
@@ -33,7 +35,7 @@ const ContentCell = styled(Cell)`
 `;
 
 const Description = styled(Content)`
-  ${tw`flex flex-col items-center justify-center w-full h-full bg-primary`}
+  ${tw`flex flex-col items-center justify-center w-full h-full bg-primary bg-opacity-70!`}
 `;
 
 const ShadowButtonWithMargin = styled(ShadowButton)`
@@ -110,7 +112,7 @@ const Portfolio = ({ content, button, cards, horizontal, ...rest }) => {
                   /* @ts-ignore */
                   current={current === i}
                 >
-                  <FlipBox
+                  {/* <FlipBox
                     front={
                       <img
                         tw="w-full h-full object-cover"
@@ -120,6 +122,15 @@ const Portfolio = ({ content, button, cards, horizontal, ...rest }) => {
                     }
                     back={<Description markdown={description} />}
                     horizontal={horizontal}
+                  /> */}
+                  <HoverBox
+                    content={
+                      <GatsbyImage
+                        image={getImage(thumbnail)}
+                        alt="Thumbnail"
+                      />
+                    }
+                    hover={<Description markdown={description} />}
                   />
                 </Cell>
               </>
