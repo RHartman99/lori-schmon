@@ -112,13 +112,11 @@ const Portfolio = ({ content, button, cards, horizontal, ...rest }) => {
                 >
                   <FlipBox
                     front={
-                      <div tw="w-full h-full bg-gray">
-                        <img
-                          tw="w-full h-full object-cover"
-                          src={thumbnail.publicURL}
-                          alt="thumbnail"
-                        />
-                      </div>
+                      <img
+                        tw="w-full h-full object-cover"
+                        src={thumbnail.publicURL}
+                        alt="thumbnail"
+                      />
                     }
                     back={<Description markdown={description} />}
                     horizontal={horizontal}
