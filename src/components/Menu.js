@@ -56,7 +56,7 @@ const Menu = ({ onClose, ...rest }) => {
               </Item>
             </li>
             {data.allMarkdownRemark.nodes.map(({ frontmatter }, i) => {
-              const slug = "/" + stringToSlug(frontmatter.title) + "/";
+              const slug = "/" + stringToSlug(frontmatter.title);
               return (
                 <li key={i}>
                   <Item to={slug} current={slug === pathname}>
