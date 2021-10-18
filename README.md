@@ -1,7 +1,7 @@
 # Lori Schmon
 [![Netlify Status](https://api.netlify.com/api/v1/badges/196842db-e7a2-4c8a-b6af-dd13732825ac/deploy-status)](https://app.netlify.com/sites/lori-schmon/deploys)
 
-<img src="https://github.com/RHartman99/lori-schmon/blob/master/src/components/logo.svg" alt="Lori Schmon logo" align="left" width="50" /> Portfolio website for [Lori Schmon]("https://www.lorischmon.com"), a filmmaker and producer with a passion for creative non-fiction storytelling. Built using Netlify CMS + Gatsby.
+<img src="https://github.com/RHartman99/lori-schmon/blob/master/src/components/logo.svg" alt="Lori Schmon logo" align="left" width="50" /> Portfolio website for [Lori Schmon](https://www.lorischmon.com), a filmmaker and producer with a passion for creative non-fiction storytelling. Built using Netlify CMS + Gatsby.
 
 ## Screenshots
 
