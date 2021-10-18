@@ -30,6 +30,8 @@ const SEO = ({ meta }) => {
   return (
     <Helmet meta={metaList}>
       <title>{title}</title>
+      {/* <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> */}
+      <link rel="icon" href="/favicon.ico" />
     </Helmet>
   );
 };
