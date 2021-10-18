@@ -1,9 +1,12 @@
 const path = require("path");
+
+const metaData = {
+  siteUrl: "https://www.lorischmon.com",
+  title: "lori-schmon",
+};
+
 module.exports = {
-  siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "lori-schmon",
-  },
+  siteMetadata: metaData,
   plugins: [
     {
       resolve: "gatsby-plugin-netlify-cms",
@@ -14,7 +17,35 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/",
+        query: `
+          {
+            allSitePage(filter: {path: {ne: "/404/", nin: ["/404/", "/dev-404-page/", "/404.html"]}}) {
+              nodes {
+                path
+              }
+            }
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+          }
+        `,
+        serialize: ({ path }) => ({
+          url: path,
+        }),
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        sitemap: `${metaData.siteUrl}/sitemap-index.xml`,
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
