@@ -50,19 +50,34 @@ portfolio:
     title: MORE WORK
     slug: /work/
   cards:
-    - description: "## Becoming Julia Michaels"
+    - description: |-
+        ## Becoming Julia Michaels
+
+        Director
       thumbnail: /assets/frame4.png
       url: https://vimeo.com/630190561
-    - description: "## Vic Mensa - Why I Vote"
+    - description: |-
+        ## Vic Mensa - Why I Vote
+
+        Director
       thumbnail: /assets/frame5.png
       url: https://vimeo.com/630172287
-    - description: "## Cleveland Cavaliers"
+    - description: |-
+        ## Cleveland Cavaliers
+
+        Producer
       thumbnail: /assets/frame1.png
       url: https://vimeo.com/630159110
-    - description: "## Detroit Lions"
+    - description: |-
+        ## Detroit Lions
+
+        Producer
       thumbnail: /assets/frame2.png
       url: https://vimeo.com/630166673
-    - description: "## Jordan Football Dreams"
+    - description: |-
+        ## Jordan Football Dreams
+
+        Director
       thumbnail: /assets/frame3.png
       url: https://vimeo.com/630168691
 ---
