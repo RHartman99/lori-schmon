@@ -5,7 +5,7 @@ backend:
 
 media_folder: static/assets
 public_folder: /assets
-site_url: https://lori-schmon.netlify.app
+site_url: https://www.lorischmon.com
 collections:
   - label: Global Settings
     name: globalSettings
